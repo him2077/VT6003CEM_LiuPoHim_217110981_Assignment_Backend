@@ -9,17 +9,21 @@ module.exports = {
       "description": "The name of the dog",
       "type": "string"
     },
-    "gender": {
-      "description": "The gender of the dog",
-      "type": "string"
-    },
     "breed": {
       "description": "The breed of the dog",
       "type": "string"
     },
+    "gender": {
+      "description": "The gender of the dog",
+      "type": "string"
+    },    
     "description": {
       "description": "Optional short description of the dog",
       "type": "string"
+    },
+    "age": {
+      "description": "The age of the dog",
+      "type": "number"
     },
     "imageURL": {
       "description": "URL for main image to show the dog",
@@ -31,5 +35,5 @@ module.exports = {
       "minimum": 0
     },
   },
-  "required": ["name", "gender", "breed", "authorID"]
+  "required": ["name", "gender", "breed", "userid"]
 }

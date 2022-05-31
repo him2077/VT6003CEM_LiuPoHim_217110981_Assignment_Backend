@@ -9,6 +9,7 @@ CREATE TABLE public.users (
 	passwordsalt varchar(16) NULL,
 	email varchar(64) NOT NULL,
 	avatarurl varchar(64) NULL,
+  "role" varchar(5) NULL,
 	CONSTRAINT users_email_key UNIQUE (email),
 	CONSTRAINT users_pkey PRIMARY KEY (id),
 	CONSTRAINT users_username_key UNIQUE (username)

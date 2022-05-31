@@ -4,6 +4,7 @@ CREATE TABLE public.dogs (
 	gender text NOT NULL,
 	breed text NOT NULL,
   description text NULL,
+  age smallint NOT NULL,
 	datecreated timestamp NOT NULL DEFAULT now(),
 	datemodified timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	imageurl varchar(2048) NULL,
@@ -13,7 +14,7 @@ CREATE TABLE public.dogs (
 );
 
 
-INSERT INTO dogs (title, allText, authorID) VALUES
+INSERT INTO dogs (nam, allText, authorID) VALUES
 	('title 1', 'some stuff', 1),
 	('another title', 'interesting', 1),
 	('last one', 'ok', 1),

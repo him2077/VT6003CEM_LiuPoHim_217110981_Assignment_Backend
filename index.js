@@ -8,7 +8,11 @@ const uploads= require('./routes/uploads')
 const users = require('./routes/users')
 const cors = require('@koa/cors');
 
-app.use(cors());
+app.use(cors({
+  origin: function(ctx){
+    return `*`;
+  }
+}));
 app.use(special.routes())
 app.use(dogs.routes())
 app.use(users.routes())

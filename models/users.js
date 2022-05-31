@@ -21,9 +21,9 @@ exports.getByUserId = async function getByUserId (id) {
   return data
 }
 
-exports.add = async function add (article) {  
-  let keys = Object.keys(article)
-  let values = Object.values(article)  
+exports.add = async function add (data) {  
+  let keys = Object.keys(data)
+  let values = Object.values(data)  
   keys = keys.join(',')   
   let parm = ''
   for(i=0; i<values.length; i++){ parm +='?,'}

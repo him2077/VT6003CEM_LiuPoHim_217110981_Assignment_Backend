@@ -74,6 +74,7 @@ const permission = can.readAll(ctx.state.user);
     }
   }
 }
+
 async function getById(ctx) {
   let id = ctx.params.id
   let user = await model.getByUserId(id)
@@ -101,16 +102,6 @@ async function login(ctx) {
     self: `https://${ctx.host}${prefix}/${id}`
   }
   ctx.body = {id, username, email, avatarurl, role,  links};
-}
-
-
-
-async function updateUser(ctx) {
-  // TODO edit an existing article
-}
-
-async function deleteUser(ctx) {
-  // TODO delete an existing article
 }
 
 module.exports = router;
